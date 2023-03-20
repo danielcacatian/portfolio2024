@@ -58,6 +58,7 @@ hr {
 nav {
   position: fixed;
   width: 100%;
+  height: 100px;
   top: 0;
   right: 0;
   z-index: 1000;
@@ -68,7 +69,19 @@ nav {
   backdrop-filter: blur(5px);
 }
 
-.logo {}
+.logo{
+  width: 150px;
+  height: 100%;
+}
+
+.logo a {
+  display: block;
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/svg/logoR.svg");
+  height: 100%;
+}
 
 .navlist {
   display: flex;
@@ -115,8 +128,31 @@ nav {
 }
 
 .home-logo {
-  font-size: 100px;
+  width: 30%;
   z-index: 2;
+}
+
+.home-arrow {
+  width: 100px;
+  height: 35px;
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzM1IiBoZWlnaHQ9IjEwNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUuMjYxIDIuMjA2QzEwLjQwNC0uNDI0IDQuMzM2IDEuMzgyIDEuNzA2IDYuMjQtLjkyNCAxMS4wOTYuODgyIDE3LjE2NCA1Ljc0IDE5Ljc5NGw5LjUyMi0xNy41ODh6bTMxNCAxNy41ODhjNC44NTctMi42MyA2LjY2Mi04LjY5OCA0LjAzMy0xMy41NTUtMi42My00Ljg1Ny04LjY5OC02LjY2Mi0xMy41NTUtNC4wMzNsOS41MjIgMTcuNTg4ek0xNjcuNSA5NmwtNC43NjEgOC43OTRhMTAgMTAgMCAwMDkuNTIyIDBMMTY3LjUgOTZ6TTUuNzM5IDE5Ljc5NGwxNTcgODUgOS41MjItMTcuNTg4LTE1Ny04NS05LjUyMiAxNy41ODh6bTE2Ni41MjIgODVsMTU3LTg1LTkuNTIyLTE3LjU4OC0xNTcgODUgOS41MjIgMTcuNTg4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  z-index: 2;
+}
+
+a.more{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: 9999;
 }
 
 /* ABOUT ------------------------------------------------- */
@@ -246,9 +282,20 @@ nav {
 }
 
 .contact-logo {
-  background-color: #f32735;
+  background-image: url();
+  width: 33%;
   height: 100%;
   justify-self: center;
+}
+
+.contact-logo a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 160%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/svg/logoR.svg");
 }
 
 .contact-links p {
