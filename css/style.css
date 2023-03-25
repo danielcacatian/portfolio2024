@@ -348,8 +348,6 @@ transition: .25s, -webkit-mask-size .25s .25s;
 }
 
 .contact-info p {
-  font-size: 12pt;
-  font-weight: 100;
   text-align: left;
   letter-spacing: 0.1em;
   margin: 0;
@@ -373,8 +371,6 @@ transition: .25s, -webkit-mask-size .25s .25s;
 }
 
 .contact-links p {
-  font-size: 12pt;
-  font-weight: 100;
   text-align: right;
   letter-spacing: 0.1em;
   margin: 0;

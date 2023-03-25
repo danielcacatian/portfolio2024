@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "proxima-nova", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+  }
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    color: #ffff;
+  }
+
+/* FONTS --------------------------------------------------- */
+h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 38pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 75%;
+  }
+  
+  p {
+    font-size: 12pt;
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+    margin-top: 30px;
+  }
+  
+  a {
+    font-size: 12pt;
+    color: #ffff;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+  }
+  
+  hr {
+    display: block;
+    background-color: #f32735;
+    border: none;
+    height: 5px;
+    margin-top: 5px;
+  }
+  
+  /* NAVBAR ------------------------------------------------- */
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 5%;
+    backdrop-filter: blur(5px);
+  }
+  
+  .logo {
+    width: 150px;
+    height: 100%;
+  }
+  
+  .logo a {
+    display: block;
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url("/assets/svg/logoR.svg");
+    height: 100%;
+  }
+  
+  .navlist {
+    display: flex;
+  }
+  
+  .navlist a {
+    margin: 0 25px;
+  }
+  
+  #menu-icon {
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+/* HOMEPAGE ------------------------------------------------- */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-loop-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.video-tint {
+  background-color: #10182040;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* CONTACT ------------------------------------------------- */
+.contact {
+  background-color: #101820bd;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
+  grid-row-gap: 10%;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 10% 20%;
+  z-index: 1;
+}
+
+.contact-email {
+  width: 100%;
+  grid-row: 1/span 2;
+}
+
+.contact-location {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-location-text{
+  margin-top: 30px;
+}
+
+.contact-location-text p{
+  text-align: right;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.contact-socials {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-socials-text{
+  margin-top: 30px;
+}
+
+.contact-socials-text p{
+  text-align: right;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
