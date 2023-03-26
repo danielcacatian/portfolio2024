@@ -1,0 +1,65 @@
+/* NAVBAR ------------------------------------------------- */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 5%;
+  backdrop-filter: blur(5px);
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+
+nav:hover {
+  background-color: #101820bd;
+}
+
+.active {
+  color: #f32735;
+}
+
+.logo {
+  width: 150px;
+  height: 100%;
+}
+
+.logo a {
+  display: block;
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/svg/logoR.svg");
+  height: 100%;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist hr.active {
+  position: relative;
+  background-color: #f32735;
+  bottom: -95%;
+  border: none;
+  height: 7.5px;
+  margin: 0 25px 0 25px;
+}
+
+.navlist a {
+  position: relative;
+  margin: 0 25px;
+  top: 6px;
+}
+
+#menu-icon {
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}

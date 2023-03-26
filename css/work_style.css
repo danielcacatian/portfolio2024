@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "proxima-nova", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: #ffff;
+}
+
+/* BACKGROUND VIDEO ------------------------------------------------- */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-loop-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.video-tint {
+  background-color: #10182040;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* WORKS ------------------------------------------------- */
+.work {
+  background-color: #101820bd;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10% 20%;
+  z-index: 1;
+}
+
+.work-header {
+  grid-column: 1/span 3;
+  margin-bottom: 30px;
+}
+
+.work-gallery {
+  display: flex;
+  flex-flow: wrap;
+  gap: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.work-project {
+  position: relative;
+  max-height: 432px;
+  max-width: 432px;
+  overflow: hidden;
+}
+
+.work-gallery img {
+  max-width: 100%;
+  min-height: 432px;
+  max-height: 432px;
+}
+
+.square img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  transition: .25s ease;
+  background-color: #f3273590;
+}
+
+.work-project:hover .work-overlay {
+  height: 100%;
+}
+
+.work-overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 15px 15px;
+}
+
+.work-overlay a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER ------------------------------------------------- */
+.contact {
+  background-color: #101820bd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding: 5% 20%;
+  padding-bottom: 0;
+  z-index: 100;
+}
+
+.contact-info p {
+  text-align: left;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.contact-logo {
+  background-image: url();
+  width: 33%;
+  height: 100%;
+  justify-self: center;
+}
+
+.contact-logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 160%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/svg/logoR.svg");
+}
+
+.contact-links p {
+  text-align: right;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+footer {
+  font-size: 14pt;
+  font-weight: 100;
+  text-align: center;
+  grid-column: 1/span 3;
+  padding: 5% 0 2.5% 0;
+  opacity: 0.5;
+}
