@@ -18,11 +18,9 @@ body {
 
 /* BACKGROUND VIDEO ------------------------------------------------- */
 .home {
+  position: fixed;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .video-loop-bg {
@@ -47,47 +45,57 @@ body {
 
 /* WORKS ------------------------------------------------- */
 .work {
+  position: relative;
   background-color: #101820bd;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
-  align-items: center;
   width: 100%;
   height: 100%;
-  padding: 10% 20%;
+  padding: 160px 20%;
+  padding-bottom: 0;
   z-index: 1;
 }
 
 .work-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 5%;
   grid-column: 1/span 3;
-  margin-bottom: 30px;
+}
+
+.filterlist {
+  display: flex;
+}
+
+.filterlist a{
+  font-weight: 400 !important;
+  margin: 0 25px;
+  padding: 10px 0;
 }
 
 .work-gallery {
-  display: flex;
-  flex-flow: wrap;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   width: 100%;
   overflow: hidden;
+  margin-top: 60px;
 }
 
 .work-project {
   position: relative;
-  max-height: 432px;
-  max-width: 432px;
+  max-height: 367px;
   overflow: hidden;
 }
 
 .work-gallery img {
   max-width: 100%;
-  min-height: 432px;
-  max-height: 432px;
+  min-height: 367px;
+  max-height: 367px;
 }
 
-.square img {
+.work-project img {
   height: 100%;
   object-fit: cover;
 }
@@ -121,8 +129,22 @@ body {
   height: 100%;
 }
 
+/* MEDIA QUERIES -------------------- */
+/* (1440p) --------- */
+@media (min-width: 1921px) and (max-width: 2560px){
+  .work-project {
+    max-height: 400px;
+  }
+
+  .work-gallery img {
+    min-height: 400px;
+    max-height: 400px;
+  }
+}
+
 /* FOOTER ------------------------------------------------- */
 .contact {
+  position: relative;
   background-color: #101820bd;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

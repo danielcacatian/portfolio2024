@@ -34,11 +34,13 @@ a {
   color: #ffff;
   font-weight: 300;
   letter-spacing: 0.1em;
-  transition: 0.25s ease
+  border-bottom: 0px solid;
+  transition: 0.25s ease;
 }
 
 a:hover{
   color: #f32735;
+  border-bottom: 7.5px solid;
 }
 
 hr.rule {

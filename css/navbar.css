@@ -21,6 +21,7 @@ nav:hover {
 
 .active {
   color: #f32735;
+  border-bottom: 7.5px solid;
 }
 
 .logo {
@@ -41,19 +42,10 @@ nav:hover {
   display: flex;
 }
 
-.navlist hr.active {
-  position: relative;
-  background-color: #f32735;
-  bottom: -95%;
-  border: none;
-  height: 7.5px;
-  margin: 0 25px 0 25px;
-}
-
 .navlist a {
-  position: relative;
+  font-weight: 400 !important;
   margin: 0 25px;
-  top: 6px;
+  padding: 27.5px 0;
 }
 
 #menu-icon {
