@@ -19,7 +19,7 @@ nav:hover {
   background-color: #101820bd;
 }
 
-.active {
+a.active {
   color: #f32735;
   border-bottom: 7.5px solid;
 }
