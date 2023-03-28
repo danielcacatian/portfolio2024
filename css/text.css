@@ -1,14 +1,14 @@
 /* FONTS --------------------------------------------------- */
 h1 {
-  font-size: 34pt;
-  font-weight: 700;
-  letter-spacing: 0.25em;
+  font-size: 38pt;
+  font-weight: 900;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 30pt;
-  font-weight: 700;
+  font-size: 34pt;
+  font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -21,8 +21,8 @@ h3 {
 }
 
 p {
-  font-size: 14pt;
-  font-weight: 300;
+  font-size: 15pt;
+  font-weight: 400;
   text-align: justify;
   letter-spacing: 0.1em;
   line-height: 150%;
@@ -38,9 +38,9 @@ a.link:hover {
 }
 
 a {
-  font-size: 14pt;
+  font-size: 15pt;
   color: #ffff;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.1em;
   transition: 0.25s ease;
 }
