@@ -11,7 +11,7 @@ nav {
   justify-content: space-between;
   padding: 25px 5%;
   backdrop-filter: blur(5px);
-  transition: 0.25s ease;
+  transition: 0.1s ease;
   overflow: hidden;
 }
 
@@ -21,7 +21,7 @@ nav:hover {
 
 a.active {
   color: #f32735;
-  border-bottom: 7.5px solid;
+  border-bottom: 7.5px solid #f32735;
 }
 
 .logo {
