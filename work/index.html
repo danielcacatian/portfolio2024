@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://use.typekit.net/ron2vsq.css">
   <!-- Icons -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +33,7 @@
     </div>
 
     <ul class="navlist">
-      <li><a class="link" href="#">ABOUT</a></li>
+      <li><a class="link" href="/about.html">ABOUT</a></li>
       <li><a class="link active" href="#">WORK</a></li>
       <li><a class="link" href="/contact.html">CONTACT</a></li>
     </ul>
@@ -45,44 +47,40 @@
   <section class="work" id="work">
     <div class="work-header">
       <ul class="filterlist">
-        <li><a class="link active" href="#">ALL</a></li>
-        <li><a class="link" href="#">ANIMATION</a></li>
-        <li><a class="link" href="#">3D</a></li>
-        <li><a class="link" href="#">2D</a></li>
       </ul>
     </div>
 
     <div class="work-gallery">
       <!-- row 1 -------------------------------------->
       <!-- project 1 -->
-      <div class="work-project">
+      <div class="work-project" data-tags="ANIMATION">
         <img src="/assets/images/Sou FINAL.png" alt="">
         <a style="color:white;" href="template.html">
           <div class="work-overlay">
             <div class="work-overlay-text">
-              <h3>[PROJECT NAME]</h3>
+              <h3>ANIMATION</h3>
             </div>
           </div>
         </a>
       </div>
       <!-- project 2 -->
-      <div class="work-project">
+      <div class="work-project" data-tags="ANIMATION">
         <img src="/assets/images/Shatter.png" alt="">
         <a style="color:white;" href="#">
           <div class="work-overlay">
             <div class="work-overlay-text">
-              <h3>[PROJECT NAME]</h3>
+              <h3>ANIMATION</h3>
             </div>
           </div>
         </a>
       </div>
       <!-- project 3 -->
-      <div class="work-project">
+      <div class="work-project" data-tags="2D">
         <img src="/assets/images/Shatter.png" alt="">
         <a style="color:white;" href="#">
           <div class="work-overlay">
             <div class="work-overlay-text">
-              <h3>[PROJECT NAME]</h3>
+              <h3>2D</h3>
             </div>
           </div>
         </a>
@@ -90,34 +88,34 @@
 
       <!-- row 2 -------------------------------------->
       <!-- project 4 -->
-      <div class="work-project">
+      <div class="work-project" data-tags="2D">
         <img src="/assets/images/Sou FINAL.png" alt="">
         <a style="color:white;" href="#">
           <div class="work-overlay">
             <div class="work-overlay-text">
-              <h3>[PROJECT NAME]</h3>
+              <h3>2D</h3>
             </div>
           </div>
         </a>
       </div>
       <!-- project 5 -->
-      <div class="work-project">
+      <div class="work-project" data-tags="3D">
         <img src="/assets/images/Shatter.png" alt="">
         <a style="color:white;" href="#">
           <div class="work-overlay">
             <div class="work-overlay-text">
-              <h3>[PROJECT NAME]</h3>
+              <h3>3D</h3>
             </div>
           </div>
         </a>
       </div>
       <!-- project 6 -->
-      <div class="work-project">
-        <img src="/assets/images/Shatter.png" alt="">
+      <div class="work-project" data-tags="3D">
+        <img src="/assets/images/Sou FINAL.png" alt="">
         <a style="color:white;" href="#">
           <div class="work-overlay">
             <div class="work-overlay-text">
-              <h3>[PROJECT NAME]</h3>
+              <h3>3D</h3>
             </div>
           </div>
         </a>
@@ -147,6 +145,8 @@
     <footer>© Daniel Cacatian 2023</footer>
   </section>
 
+  <!-- JAVASCRIPT ---------------------------------------------------------------->
+  <script type="text/javascript" src="/js/filter_work.js"></script>
 </body>
 
 </html>

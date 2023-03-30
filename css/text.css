@@ -37,12 +37,22 @@ a.link:hover {
   border-bottom: 7.5px solid;
 }
 
+a.filter {
+  border-bottom: 0px solid;
+}
+
+a.filter:hover {
+  border-bottom: 7.5px solid;
+}
+
+
 a {
   font-size: 15pt;
   color: #ffff;
   font-weight: 400;
   letter-spacing: 0.1em;
   transition: 0.25s ease;
+  cursor: pointer;
 }
 
 a:hover {
