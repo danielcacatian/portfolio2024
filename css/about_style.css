@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "proxima-nova", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: #ffff;
+}
+
+/* VIDEO BACKGROUND ------------------------------------------------- */
+.home {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-loop-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.video-tint {
+  background-color: #10182040;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* ABOUT ------------------------------------------------- */
+/* Description ----------------- */
+.about {
+  position: relative;
+  background-color: #101820bd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
+  grid-row-gap: 7.5%;
+  width: 100%;
+  height: 100%;
+  padding: 160px 20%;
+}
+
+.about-img {
+  max-width: 100%;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-text p {
+margin-top: 0;
+}
+
+.left {
+  grid-row: 1/span 2;
+}
+
+/* CV ----------------- */
+.cv{
+  position: relative;
+  background-color: #101820bd;
+  width: 100%;
+  height: 100%;
+  padding: 0 20%;
+  padding-bottom: 0;
+}
+
+.curriculum-vitae h1{
+  margin-bottom: 30px;
+}
+
+.curriculum-vitae img{
+  max-width: 100%;
+object-fit: cover;}
