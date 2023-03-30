@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://use.typekit.net/ron2vsq.css">
   <!-- Icons -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,15 +32,15 @@
   </section>
 
   <!-- NAVBAR ---------------------------------------------------------------->
-  <nav>
+  <nav class="navbar">
     <div class="logo">
       <a href="#"></a>
     </div>
 
     <ul class="navlist">
-      <li><a class="link active" href="about.html">ABOUT</a></li>
-      <li><a class="link" href="/work">WORK</a></li>
-      <li><a class="link" href="contact.html">CONTACT</a></li>
+      <li><a class="link" href="about.html" data-section="about">ABOUT</a></li>
+      <li><a class="link" href="/work" data-section="work">WORK</a></li>
+      <li><a class="link" href="contact.html" data-section="contact">CONTACT</a></li>
     </ul>
 
     <div class="bx bx-menu" id="menu-icon">
@@ -91,7 +93,7 @@
   </section>
 
   <!-- THE REST -------------------------------->
-  <section class="rest">
+  <section class="rest" id="work">
     <div class="rest-header">
       <h1>THE REST</h1>
     </div>
@@ -225,7 +227,7 @@
   </section>
 
   <!-- JAVASCRIPT ---------------------------------------------------------------->
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/home_script.js"></script>
 </body>
 
 </html>
