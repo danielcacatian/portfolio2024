@@ -69,3 +69,11 @@ hr.rule {
 span.red {
   color: #f32735;
 }
+
+span.name {
+  font-size: 15pt;
+  color: #f32735;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-right: -200px;
+}
