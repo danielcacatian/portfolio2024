@@ -148,9 +148,10 @@ input.email-send {
   background-color: transparent;
   color: white;
   width: 25%;
-  font-size: 13pt;
-  font-weight: 400;
+  font-size: 16pt;
+  font-weight: 800;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   padding: 10px;
   border: solid 5px #f32735;
   cursor: pointer;
