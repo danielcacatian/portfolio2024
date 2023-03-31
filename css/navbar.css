@@ -11,8 +11,12 @@ nav.navbar {
   justify-content: space-between;
   padding: 25px 5%;
   backdrop-filter: blur(5px);
-  transition: 0.1s ease;
+  transition: 0.25s ease;
   overflow: hidden;
+  opacity: 1;
+}
+
+nav.hidden {
   opacity: 0;
 }
 

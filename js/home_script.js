@@ -1,6 +1,24 @@
 /* NAVBAR ------------------------------------------------- */
 // Navbar appears after homescreen
+$(document).ready(function() {
+  var navbar = $('.navbar');
+  var section1 = $('#home').outerHeight() - 100;
+  var section2 = $('#about').offset().top;
 
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > section1) {
+      navbar.removeClass('hidden');
+    } else {
+      navbar.addClass('hidden');
+    }
+
+    if ($(window).scrollTop() > section2) {
+      navbar.addClass('fixed');
+    } else {
+      navbar.removeClass('fixed');
+    }
+  });
+});
 
 // Navbar .active changes
 $(document).ready(function() {
