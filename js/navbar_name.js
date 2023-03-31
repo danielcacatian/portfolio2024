@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $(".logo").hover(
     function(){
-      $(".name").animate({marginRight: '+=200px'}, 'fast');
+      $(".name").animate({left: '+=205px'}, 250);
     },
     function(){
-      $(".name").animate({marginRight: '-=200px'}, 'fast');
+      $(".name").animate({left: '-=205px'}, 250);
     }
   );
 });

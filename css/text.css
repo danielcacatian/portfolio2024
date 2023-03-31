@@ -75,5 +75,6 @@ span.name {
   color: #f32735;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-right: -200px;
+  position: relative;
+  left: -205px;
 }
