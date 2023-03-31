@@ -48,9 +48,11 @@
     <div class="contact-email">
       <h2>EMAIL</h2>
       <hr class="rule left" style="width: 20%">
-      <form class="email-form" action="">
-        <label for="yourEmail">Email</label>
-        <input type="text" id="yourEmail" name="youremail" placeholder="Your email">
+      <form class="email-form" action="mailto:cacatiandaniel@hotmail.com" method="post" enctype="text/plain">
+        <input class="email-input" type="text" name="name" placeholder="Name" minlength="3" maxlength="30">
+        <input class="email-input" type="text" name="subject" placeholder="Subject" minlength="3" maxlength="30">
+        <textarea class="email-textarea" name="message" placeholder="Message (max 500 characters)" minlength="10" maxlength="500"></textarea>
+        <input class="email-send" type="submit" value="SEND">
       </form>
     </div>
 
