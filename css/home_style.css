@@ -162,6 +162,13 @@ a.more {
   width: 100%;
 }
 
+.recent-buttons {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+
 /* REST -------------------- */
 .rest {
   background-color: #101820bd;
@@ -237,7 +244,7 @@ a.more {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0 0 15px 15px;
+  padding: 0 60px 15px 15px;
 }
 
 .rest-overlay a {
@@ -265,6 +272,10 @@ a.more {
 .rest-more:hover {
   --_i: 100%;
   transition: .25s ease, -webkit-mask-size .25s .25s;
+}
+
+.rest-more-text {
+  text-align: center;
 }
 
 .rest-more-text a {

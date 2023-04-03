@@ -85,6 +85,10 @@ a.more {
   align-items: flex-end;
 }
 
+.details-tags p{
+  text-align: right !important;
+}
+
 /* GALLERY ------------------------------------------------- */
 .gallery {
   background-color: #101820bd;

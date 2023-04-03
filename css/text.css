@@ -17,7 +17,7 @@ h3 {
   font-size: 38pt;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 75%;
+  line-height: 80%;
 }
 
 h4 {
@@ -70,7 +70,24 @@ hr.rule {
   background-color: #f32735;
   border: none;
   height: 7.5px;
-  margin-top: 5px;
+}
+
+span.bold {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+span.quote {
+  font-size: 20pt;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  padding: 10%;
+}
+
+span.sayer {
+  position: relative;
 }
 
 span.red {
