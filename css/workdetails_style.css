@@ -6,6 +6,8 @@
   text-decoration: none;
   list-style-type: none;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 *::-webkit-scrollbar {
