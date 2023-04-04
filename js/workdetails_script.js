@@ -42,7 +42,7 @@ $(document).ready(function() {
     }
     // Otherwise, change the z-index of the box back to 1
     else {
-    video.css("z-index", 9999);
+      video.css("z-index", 9999);
     }
   });
 });

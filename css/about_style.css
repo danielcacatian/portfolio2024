@@ -76,7 +76,7 @@ body {
 }
 
 .about-text p {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .left {
@@ -84,7 +84,7 @@ margin-top: 0;
 }
 
 /* CV ----------------- */
-.cv{
+.cv {
   position: relative;
   background-color: #101820e8;
   width: 100%;
@@ -93,10 +93,11 @@ margin-top: 0;
   padding-bottom: 0;
 }
 
-.curriculum-vitae h1{
+.curriculum-vitae h1 {
   margin-bottom: 30px;
 }
 
-.curriculum-vitae img{
+.curriculum-vitae img {
   max-width: 100%;
-object-fit: cover;}
+  object-fit: cover;
+}

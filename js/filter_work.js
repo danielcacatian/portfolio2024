@@ -1,6 +1,6 @@
 /* WORK FILTERING ------------------------------------------------- */
 /* Filter ------------ */
-(function () {
+(function() {
 
   // var
   var $imgs = $('.work-project'); //img div
@@ -8,12 +8,12 @@
   var tagged = {}; //using
 
   // Get images
-  $imgs.each(function () {
+  $imgs.each(function() {
     var img = this;
     var tags = $(this).data('tags');
 
     if (tags) {
-      tags.split(',').forEach(function (tagName) {
+      tags.split(',').forEach(function(tagName) {
         if (tagged[tagName] == null) {
           tagged[tagName] = [];
         }
@@ -23,12 +23,12 @@
   });
 
 
-// ALL link
+  // ALL link
   $('<li/>').appendTo($filters).append(
     $('<a/>', {
       text: ' ALL',
       class: 'active',
-      click: function () {
+      click: function() {
         $(`.filterlist li a`).removeClass('active');
         $(this)
           .addClass('active')
@@ -37,14 +37,14 @@
         $imgs.fadeIn(200);
       }
     })
-);
+  );
 
-// Filters link
-  $.each(tagged, function (tagName) {
+  // Filters link
+  $.each(tagged, function(tagName) {
     $('<li/>').appendTo($filters).append(
       $('<a/>', {
         text: tagName,
-        click: function () {
+        click: function() {
           $(`.filterlist li a`).removeClass('active');
           $(this)
             .addClass('active')

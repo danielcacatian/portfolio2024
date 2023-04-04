@@ -112,7 +112,7 @@ form.email-form {
   margin-top: 30px;
 }
 
-input.email-input{
+input.email-input {
   padding: 10px;
   margin-bottom: 30px;
   border: 3.5px solid #ffff;
@@ -120,7 +120,7 @@ input.email-input{
   width: 100%;
 }
 
-textarea.email-textarea{
+textarea.email-textarea {
   padding: 10px;
   margin-bottom: 20px;
   border: 3.5px solid #ffff;
@@ -129,7 +129,7 @@ textarea.email-textarea{
   height: 150px;
 }
 
-textarea{
+textarea {
   resize: vertical;
   min-height: 150px;
   max-height: 300px;

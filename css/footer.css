@@ -30,7 +30,7 @@
   background-size: 160%;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-image: url("assets/svg/logo/logoR.svg");
+  background-image: url("/assets/svg/logo/logoR.svg");
 }
 
 .contact-links p {
