@@ -25,12 +25,14 @@ body {
 
 .video-loop-bg {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
-  z-index: -2;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .video-tint {
