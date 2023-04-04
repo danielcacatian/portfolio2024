@@ -60,7 +60,7 @@ a.more {
 
 /* DETAILS ------------------------------------------------- */
 .details {
-  background-color: #101820bd;
+  background-color: #101820e8;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10%;
@@ -91,7 +91,7 @@ a.more {
 
 /* GALLERY ------------------------------------------------- */
 .gallery {
-  background-color: #101820bd;
+  background-color: #101820e8;
   padding: 5% 20%;
   padding-bottom: 0;
   display: flex;

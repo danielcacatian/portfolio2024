@@ -27,12 +27,14 @@ body {
 
 .video-loop-bg {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
-  z-index: -2;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .video-tint {
@@ -75,7 +77,7 @@ a.more {
 
 /* ABOUT ------------------------------------------------- */
 .about {
-  background-color: #101820bd;
+  background-color: #101820e8;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10%;
@@ -134,7 +136,7 @@ a.more {
 /* WORK ------------------------------------------------- */
 /* RECENT -------------------- */
 .recent {
-  background-color: #101820bd;
+  background-color: #101820e8;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10%;
@@ -171,7 +173,7 @@ a.more {
 
 /* REST -------------------- */
 .rest {
-  background-color: #101820bd;
+  background-color: #101820e8;
   width: 100%;
   padding: 10% 20%;
   padding-bottom: 0;
