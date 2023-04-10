@@ -121,8 +121,8 @@ body {
   }
 
   .gallery img {
-    min-height: 601px;
-    max-height: 601px;
+    min-height: 599px;
+    max-height: 599px;
   }
 }
 
