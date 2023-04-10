@@ -95,7 +95,7 @@ a.active {
     display: none;
   }
 
-  #menu-icon{
+  #menu-icon {
     display: block;
   }
 
@@ -127,10 +127,9 @@ a.active {
     border-bottom: none !important;
   }
 
-  .navlist.open{
+  .navlist.open {
     top: 0;
     padding: 50% 0;
     opacity: 1;
   }
-
 }

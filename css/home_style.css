@@ -33,6 +33,8 @@ body {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
+  animation-name: background-anim;
+  animation-duration: 1s;
 }
 
 .video-tint {
@@ -43,6 +45,8 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  animation-name: background-anim;
+  animation-duration: 1s;
 }
 
 .home-logo {
@@ -90,7 +94,17 @@ a.more {
     width: 67px;
     height: 23px;
   }
+}
 
+/* ANIMATION -------------------- */
+@keyframes background-anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ABOUT ------------------------------------------------- */
@@ -176,7 +190,6 @@ a.more {
     padding: 25px 20px;
     -webkit-mask: none;
   }
-
 }
 
 /* WORK ------------------------------------------------- */
@@ -245,7 +258,6 @@ a.more {
     margin-top: 5%;
     justify-content: space-around;
   }
-
 }
 
 /* REST -------------------- */
@@ -432,5 +444,4 @@ a.more {
     border: solid 5px #f32735;
     -webkit-mask: none;
   }
-
 }

@@ -33,6 +33,19 @@ body {
   z-index: 10;
   transform: translateX(-50%) translateY(-50%);
   object-fit: cover;
+  animation-name: background-anim;
+  animation-duration: 1s;
+}
+
+/* ANIMATION -------------------- */
+@keyframes background-anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* DETAILS ------------------------------------------------- */

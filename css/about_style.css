@@ -12,6 +12,7 @@
 
 body {
   color: #ffff;
+  overflow-x: hidden;
 }
 
 /* VIDEO BACKGROUND ------------------------------------------------- */
@@ -31,6 +32,8 @@ body {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
+  animation-name: background-anim;
+  animation-duration: 1s;
 }
 
 .video-tint {
@@ -41,6 +44,17 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+/* ANIMATION -------------------- */
+@keyframes background-anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ABOUT ------------------------------------------------- */
@@ -58,7 +72,10 @@ body {
 }
 
 .about-img {
+  position: relative;
   max-width: 100%;
+  animation-name: right-anim;
+  animation-duration: 1.5s;
 }
 
 .about-img img {
@@ -76,7 +93,41 @@ body {
 }
 
 .left {
+  position: relative;
   grid-row: 1/span 2;
+  animation-name: left-anim;
+  animation-duration: 1.5s;
+}
+
+.right {
+  position: relative;
+  animation-name: right-anim;
+  animation-duration: 1.5s;
+}
+
+/* ANIMATION -------------------- */
+@keyframes left-anim {
+  from {
+    left: -500px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes right-anim {
+  from {
+    left: 500px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 /* CV ----------------- */
@@ -116,4 +167,16 @@ body {
     padding-bottom: 0;
   }
 
+  /* ANIMATION -------------------- */
+  @keyframes left-anim {
+    from {
+      left: 500px;
+      opacity: 0;
+    }
+
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
 }

@@ -31,6 +31,8 @@ body {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
+  animation-name: background-anim;
+  animation-duration: 1s;
 }
 
 .video-tint {
@@ -41,6 +43,17 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+/* ANIMATION -------------------- */
+@keyframes background-anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* WORKS ------------------------------------------------- */
@@ -64,7 +77,10 @@ body {
 }
 
 .filterlist {
+  position: relative;
   display: flex;
+  animation-name: filters-anim;
+  animation-duration: 1s;
 }
 
 .filterlist a {
@@ -74,6 +90,7 @@ body {
 }
 
 .work-gallery {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 25px;
@@ -81,6 +98,8 @@ body {
   width: 100%;
   overflow: hidden;
   margin-top: 60px;
+  animation-name: gallery-anim;
+  animation-duration: 1s;
 }
 
 .work-project {
@@ -131,6 +150,31 @@ body {
   z-index: 1;
 }
 
+/* ANIMATION -------------------- */
+@keyframes filters-anim {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes gallery-anim {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 /* MEDIA QUERIES -------------------- */
 /* (1440p) --------- */
 @media (min-width: 1921px) and (max-width: 2560px) {
@@ -158,6 +202,11 @@ body {
     gap: 15px;
     flex-direction: column;
     align-items: center;
+  }
+
+  .filterlist a {
+    font-size: 15pt;
+    font-weight: 700 !important;
   }
 
   .work-gallery {

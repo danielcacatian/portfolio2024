@@ -110,25 +110,25 @@ span.name {
   h1 {
     font-size: 24pt;
   }
-  
+
   h2 {
     font-size: 20pt;
   }
-  
+
   h3 {
     font-size: 30pt;
   }
-  
+
   h4 {
     font-size: 16pt;
   }
-  
+
   p {
     font-size: 13pt;
     line-height: 175%;
     word-spacing: -0.1em;
-    }
-  
+  }
+
   a {
     font-size: 13pt;
   }
@@ -136,7 +136,7 @@ span.name {
   hr.rule {
     margin-top: 10px;
   }
-  
+
   span.name {
     font-size: 15pt;
     color: #f32735;
@@ -145,5 +145,4 @@ span.name {
     position: relative;
     left: -205px;
   }
-  
 }
