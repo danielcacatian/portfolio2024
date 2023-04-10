@@ -1,0 +1,23 @@
+/* Set scrollbar width and background color */
+::-webkit-scrollbar {
+    width: 8px;
+    margin: 0;
+    padding: 0;
+    background-color: #101820;
+  }
+  
+  /* Add scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #101820;
+  }
+  
+  /* Add scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #f32735;
+    border-radius: 10px;
+  }
+
+/* Add scrollbar corner */
+::-webkit-scrollbar-corner {
+    background-color: #101820;
+  }

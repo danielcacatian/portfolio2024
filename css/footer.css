@@ -17,7 +17,6 @@
 }
 
 .contact-logo {
-  background-image: url();
   width: 33%;
   height: 100%;
   justify-self: center;
@@ -30,7 +29,7 @@
   background-size: 160%;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-image: url("/assets/svg/logo/logoR.svg");
+  background-image: url("../assets/svg/logo/logoR.svg");
 }
 
 .contact-links p {
@@ -46,4 +45,31 @@ footer {
   grid-column: 1/span 3;
   padding: 5% 0 2.5% 0;
   opacity: 0.5;
+}
+
+/* MEDIA QUERIES -------------------- */
+/* (Phones) --------- */
+@media only screen and (orientation: portrait) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    width: 100%;
+    padding: 10% 10%;
+    padding-bottom: 0;
+  }
+
+  .contact-logo {
+    display: none;
+  }
+
+  .contact-links p {
+    text-align: left;
+  }
+
+  footer {
+    font-size: 10pt;
+    grid-column: 1/span 1;
+    padding: 0% 0 5% 0;
+  }
+  
 }

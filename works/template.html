@@ -7,12 +7,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Cacatian - Portfolio</title>
   <!-- Favicon ---------------------------------------------------------------->
-  <link rel="icon" href="assets/svg/logo/icon.svg" type="svg" sizes="50x50">
+  <link rel="icon" href="../assets/svg/logo/icon.svg" type="svg" sizes="50x50">
   <!-- CSS ---------------------------------------------------------------->
-  <link rel="stylesheet" type="text/css" href="/css/text.css">
-  <link rel="stylesheet" type="text/css" href="/css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="/css/workdetails_style.css">
-  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/text.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/workdetails_style.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <style>
+    /* Change scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+    background-color: #0081ab;
+    border-radius: 10px;
+    }
+
+    /* Change logo color */
+    .logo a,
+    .contact-logo a {
+      background-image: url("../assets/svg/logo/logoTrain.svg");
+    }
+
+    /* Change color of HR, text & active */
+    a.active {
+      color: #bf4586;
+      border-bottom: 7.5px solid #bf4586;
+    }
+
+    a:hover {
+      color: #bf4586;
+    }
+
+    hr.rule {
+      background-color: #bf4586;
+    }
+
+    span {
+      color: #bf4586 !important;
+    }
+  </style>
   <!-- Font -->
   <link rel="stylesheet" href="https://use.typekit.net/ron2vsq.css">
   <!-- Icons -->
@@ -24,21 +56,21 @@
 <body>
   <!-- PROJECT ---------------------------------------------------------------->
   <section class="project" id="project">
-    <img class="project-bg" src="/assets/images/Shatter.png" alt="">
+    <img class="project-bg" src="../assets/images/Shatter.png" alt="">
     <div class="project-arrow"></div>
   </section>
 
   <!-- NAVBAR ---------------------------------------------------------------->
   <nav class="navbar hidden">
     <div class="logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
       <div class="easter-egg"><span class="name">DANIEL CACATIAN</span></div>
     </div>
 
     <ul class="navlist">
-      <li><a class="link" href="/about.html">ABOUT</a></li>
-      <li><a class="link active" href="/work">WORK</a></li>
-      <li><a class="link" href="/contact.html">CONTACT</a></li>
+      <li><a class="link" href="../about.html">ABOUT</a></li>
+      <li><a class="link active" href="index.html">WORK</a></li>
+      <li><a class="link" href="../contact.html">CONTACT</a></li>
     </ul>
 
     <div class="bx bx-menu" id="menu-icon">
@@ -73,19 +105,19 @@
   <!-- GALLERY ---------------------------------------------------------------->
   <section class="gallery">
     <div class="gallery-horizontal">
-      <img src="/assets/images/Shatter.png" alt="">
+      <img src="../assets/images/Shatter.png" alt="">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/Sou Final.png" alt="">
+      <img src="../assets/images/Sou Final.png" alt="">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/Sou Final.png" alt="">
+      <img src="../assets/images/Sou Final.png" alt="">
     </div>
 
     <div class="gallery-horizontal">
-      <img src="/assets/images/Shatter.png" alt="">
+      <img src="../assets/images/Shatter.png" alt="">
     </div>
 
   </section>
@@ -99,7 +131,7 @@
     </div>
 
     <div class="contact-logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
     </div>
 
     <div class="contact-links">
@@ -112,8 +144,8 @@
   </section>
 
   <!-- JAVASCRIPT ---------------------------------------------------------------->
-  <script type="text/javascript" src="/js/workdetails_script.js"></script>
-  <script type="text/javascript" src="/js/navbar_name.js"></script>
+  <script type="text/javascript" src="../js/workdetails_script.js"></script>
+  <script type="text/javascript" src="../js/navbar_name.js"></script>
 </body>
 
 </html>

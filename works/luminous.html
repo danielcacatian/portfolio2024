@@ -7,17 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Cacatian - Portfolio</title>
   <!-- Favicon ---------------------------------------------------------------->
-  <link rel="icon" href="assets/svg/logo/icon.svg" type="svg" sizes="50x50">
+  <link rel="icon" href="../assets/svg/logo/icon.svg" type="svg" sizes="50x50">
   <!-- CSS ---------------------------------------------------------------->
-  <link rel="stylesheet" type="text/css" href="/css/text.css">
-  <link rel="stylesheet" type="text/css" href="/css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="/css/workdetails_style.css">
-  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/text.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/workdetails_style.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <style>
+    /* Change scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+    background-color: #1F928A;
+    border-radius: 10px;
+    }
+
     /* Change logo color */
     .logo a,
     .contact-logo a {
-      background-image: url("/assets/svg/logo/logoLuminous.svg");
+      background-image: url("../assets/svg/logo/logoLuminous.svg");
     }
 
     /* Change color of HR, text & active */
@@ -56,14 +63,14 @@
   <!-- NAVBAR ---------------------------------------------------------------->
   <nav class="navbar hidden">
     <div class="logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
       <div class="easter-egg"><span class="name">DANIEL CACATIAN</span></div>
     </div>
 
     <ul class="navlist">
-      <li><a class="link" href="/about.html">ABOUT</a></li>
-      <li><a class="link active" href="/works">WORK</a></li>
-      <li><a class="link" href="/contact.html">CONTACT</a></li>
+      <li><a class="link" href="../about.html">ABOUT</a></li>
+      <li><a class="link active" href="index.html">WORK</a></li>
+      <li><a class="link" href="../contact.html">CONTACT</a></li>
     </ul>
 
     <div class="bx bx-menu" id="menu-icon">
@@ -87,24 +94,22 @@
       <p>Mediums used:<br>
         Blender
       </p>
-      <span class="red">
-        <p>3D Modelling, Reflections, Light, Emissions, Composition, Storytelling, Environments</p>
-      </span>
+
     </div>
   </section>
 
   <!-- GALLERY ---------------------------------------------------------------->
   <section class="gallery">
     <div class="gallery-horizontal">
-      <img src="/assets/images/works/luminous/Horizon.png" alt="horizon">
+      <img src="../assets/images/works/luminous/Horizon.png" alt="horizon">
     </div>
 
     <div class="gallery-horizontal">
-      <img src="/assets/images/works/luminous/Shatter.png" alt="shatter">
+      <img src="../assets/images/works/luminous/Shatter.png" alt="shatter">
     </div>
 
     <div class="gallery-horizontal">
-      <img src="/assets/images/works/luminous/The Force.png" alt="lightsaber">
+      <img src="../assets/images/works/luminous/The Force.png" alt="lightsaber">
     </div>
 
   </section>
@@ -118,7 +123,7 @@
     </div>
 
     <div class="contact-logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
     </div>
 
     <div class="contact-links">
@@ -131,8 +136,8 @@
   </section>
 
   <!-- JAVASCRIPT ---------------------------------------------------------------->
-  <script type="text/javascript" src="/js/workdetails_script.js"></script>
-  <script type="text/javascript" src="/js/navbar_name.js"></script>
+  <script type="text/javascript" src="../js/workdetails_script.js"></script>
+  <script type="text/javascript" src="../js/navbar_name.js"></script>
 </body>
 
 </html>

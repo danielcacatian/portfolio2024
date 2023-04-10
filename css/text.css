@@ -30,10 +30,12 @@ h4 {
 p {
   font-size: 15pt;
   font-weight: 400;
-  text-align: justify;
   letter-spacing: 0.1em;
+  word-spacing: 0em;
   line-height: 150%;
   margin-top: 30px;
+  text-align: justify;
+  hyphens: none;
 }
 
 a.link {
@@ -100,4 +102,48 @@ span.name {
   letter-spacing: 0.1em;
   position: relative;
   left: -205px;
+}
+
+/* MEDIA QUERIES -------------------- */
+/* (Phones) --------- */
+@media only screen and (orientation: portrait) {
+  h1 {
+    font-size: 24pt;
+  }
+  
+  h2 {
+    font-size: 20pt;
+  }
+  
+  h3 {
+    font-size: 30pt;
+  }
+  
+  h4 {
+    font-size: 16pt;
+  }
+  
+  p {
+    font-size: 13pt;
+    line-height: 175%;
+    word-spacing: -0.1em;
+    }
+  
+  a {
+    font-size: 13pt;
+  }
+
+  hr.rule {
+    margin-top: 10px;
+  }
+  
+  span.name {
+    font-size: 15pt;
+    color: #f32735;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: -205px;
+  }
+  
 }

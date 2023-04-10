@@ -7,17 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Cacatian - Portfolio</title>
   <!-- Favicon ---------------------------------------------------------------->
-  <link rel="icon" href="assets/svg/logo/icon.svg" type="svg" sizes="50x50">
+  <link rel="icon" href="../assets/svg/logo/icon.svg" type="svg" sizes="50x50">
   <!-- CSS ---------------------------------------------------------------->
-  <link rel="stylesheet" type="text/css" href="/css/text.css">
-  <link rel="stylesheet" type="text/css" href="/css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="/css/workdetails_style.css">
-  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/text.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/workdetails_style.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <style>
+    /* Change scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+    background-color: #bf4586;
+    border-radius: 10px;
+    }
+
     /* Change logo color */
     .logo a,
     .contact-logo a {
-      background-image: url("/assets/svg/logo/logoTrain.svg");
+      background-image: url("../assets/svg/logo/logoTrain.svg");
     }
 
     /* Change color of HR, text & active */
@@ -56,14 +63,14 @@
   <!-- NAVBAR ---------------------------------------------------------------->
   <nav class="navbar hidden">
     <div class="logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
       <div class="easter-egg"><span class="name">DANIEL CACATIAN</span></div>
     </div>
 
     <ul class="navlist">
-      <li><a class="link" href="/about.html">ABOUT</a></li>
-      <li><a class="link active" href="/works">WORK</a></li>
-      <li><a class="link" href="/contact.html">CONTACT</a></li>
+      <li><a class="link" href="../about.html">ABOUT</a></li>
+      <li><a class="link active" href="index.html">WORK</a></li>
+      <li><a class="link" href="../contact.html">CONTACT</a></li>
     </ul>
 
     <div class="bx bx-menu" id="menu-icon">
@@ -81,7 +88,6 @@
     <div class="details-text">
       <p>Train to Nowhere is a 2D/3D satisfying loop animation that emulates lo-fi vibes. My inspirations were my numerous public transport trips, the music that accompanied me along the way and my fondness for Japanese culture. The environment is
         made in 3D, whereas the character is hand-drawn and animated in 2D.</p>
-      <p>Music by:<br> Jhove x Dillan Witherow - when I close my eyes</p>
     </div>
 
     <div class="details-tags">
@@ -89,28 +95,26 @@
         Blender, Photoshop & Premiere Pro
       </p>
 
-      <span class="red">
-        <p>Anime, 2D Animation, 3D Animation, Digital Art,<br>Lo-Fi, Japan, Cherry Blossoms, Looping</p>
-      </span>
+      <p>Music by:<br><span class="red">Jhove x Dillan Witherow</span> - when I close my eyes</p>
     </div>
   </section>
 
   <!-- GALLERY ---------------------------------------------------------------->
   <section class="gallery">
     <div class="gallery-square">
-      <img src="/assets/images/works/train/thumbnail.png" alt="train final">
+      <img src="../assets/images/works/train/thumbnail.png" alt="train final">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/train/sketch.png" alt="train sketch">
+      <img src="../assets/images/works/train/sketch.png" alt="train sketch">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/train/3Drender.png" alt="train render">
+      <img src="../assets/images/works/train/3Drender.png" alt="train render">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/train/WIP.png" alt="train WIP">
+      <img src="../assets/images/works/train/WIP.png" alt="train WIP">
     </div>
 
   </section>
@@ -124,7 +128,7 @@
     </div>
 
     <div class="contact-logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
     </div>
 
     <div class="contact-links">
@@ -137,8 +141,8 @@
   </section>
 
   <!-- JAVASCRIPT ---------------------------------------------------------------->
-  <script type="text/javascript" src="/js/workdetails_script.js"></script>
-  <script type="text/javascript" src="/js/navbar_name.js"></script>
+  <script type="text/javascript" src="../js/workdetails_script.js"></script>
+  <script type="text/javascript" src="../js/navbar_name.js"></script>
 </body>
 
 </html>

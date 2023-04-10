@@ -10,10 +10,6 @@
   text-rendering: optimizeLegibility;
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   color: #ffff;
 }
@@ -98,6 +94,26 @@ body {
 }
 
 .curriculum-vitae img {
-  max-width: 100%;
-  object-fit: cover;
+  width: 100%;
+}
+
+/* MEDIA QUERIES -------------------- */
+/* (Phones) --------- */
+@media only screen and (orientation: portrait) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    padding: 160px 10%;
+    padding-bottom: 0;
+  }
+
+  .cv {
+    position: relative;
+    background-color: #101820e8;
+    width: 100%;
+    height: 100%;
+    padding: 20% 10%;
+    padding-bottom: 0;
+  }
+
 }

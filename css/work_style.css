@@ -10,10 +10,6 @@
   text-rendering: optimizeLegibility;
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   color: #ffff;
 }
@@ -65,7 +61,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 25px 5%;
-  grid-column: 1/span 3;
 }
 
 .filterlist {
@@ -125,7 +120,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0 0 15px 15px;
+  padding: 0 15px 15px 15px;
   z-index: 0;
 }
 
@@ -146,5 +141,25 @@ body {
   .work-gallery img {
     min-height: 400px;
     max-height: 400px;
+  }
+}
+
+/* MEDIA QUERIES -------------------- */
+/* (Phones) --------- */
+@media only screen and (orientation: portrait) {
+  .work {
+    padding: 160px 10%;
+    padding-bottom: 0;
+    z-index: 1;
+  }
+
+  .work-gallery {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+
+  .work-overlay {
+    height: 100%;
+    background-color: #10182050;
   }
 }

@@ -7,17 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Cacatian - Portfolio</title>
   <!-- Favicon ---------------------------------------------------------------->
-  <link rel="icon" href="assets/svg/logo/icon.svg" type="svg" sizes="50x50">
+  <link rel="icon" href="../assets/svg/logo/icon.svg" type="svg" sizes="50x50">
   <!-- CSS ---------------------------------------------------------------->
-  <link rel="stylesheet" type="text/css" href="/css/text.css">
-  <link rel="stylesheet" type="text/css" href="/css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="/css/workdetails_style.css">
-  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/text.css">
+  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../css/workdetails_style.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <style>
+    /* Change scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+    background-color: #0081ab;
+    border-radius: 10px;
+    }
+    
     /* Change logo color */
     .logo a,
     .contact-logo a {
-      background-image: url("/assets/svg/logo/logoSoar.svg");
+      background-image: url("../assets/svg/logo/logoSoar.svg");
     }
 
     /* Change color of HR, text & active */
@@ -49,21 +56,21 @@
 <body>
   <!-- PROJECT ---------------------------------------------------------------->
   <section class="project" id="project">
-    <img class="project-bg" src="/assets/images/works/soar/banner.png" alt="soar banner">
+    <img class="project-bg" src="../assets/images/works/soar/banner.png" alt="soar banner">
     <div class="project-arrow"></div>
   </section>
 
   <!-- NAVBAR ---------------------------------------------------------------->
   <nav class="navbar hidden">
     <div class="logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
       <div class="easter-egg"><span class="name">DANIEL CACATIAN</span></div>
     </div>
 
     <ul class="navlist">
-      <li><a class="link" href="/about.html">ABOUT</a></li>
-      <li><a class="link active" href="/works">WORK</a></li>
-      <li><a class="link" href="/contact.html">CONTACT</a></li>
+      <li><a class="link" href="../about.html">ABOUT</a></li>
+      <li><a class="link active" href="index.html">WORK</a></li>
+      <li><a class="link" href="../contact.html">CONTACT</a></li>
     </ul>
 
     <div class="bx bx-menu" id="menu-icon">
@@ -81,44 +88,41 @@
     <div class="details-text">
       <p>Sou & Māku are original characters that I designed after the itch.io game I made in 2020. Sou is a bright blue bird that wears an enchanted cloak. Māku is a mole specialized in navigation. He acts as a companion to Sou and helps him on his
         journey. I am currently still developing a fully fleshed-out original idea surrounding this concept and characters.</p>
-
-      <p>Link to itch.io:<br> <a href="https://comicsansdan.itch.io/soar" target="_blank">Soar</a></p>
     </div>
 
     <div class="details-tags">
       <p>Mediums used:<br>
         Photoshop
       </p>
-      <span class="red">
-        <p>Character Design, Original Concept, Adventure, Anthropomorphic, Painterly, Soar</p>
-      </span>
+
+      <p>Link to itch.io: <a href="https://comicsansdan.itch.io/soar" target="_blank">Soar</a></p>
     </div>
   </section>
 
   <!-- GALLERY ---------------------------------------------------------------->
   <section class="gallery">
     <div class="gallery-square">
-      <img src="/assets/images/works/soar/SouFinal.png" alt="sou final">
+      <img src="../assets/images/works/soar/SouFinal.png" alt="sou final">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/soar/MoleFinal.png" alt="maku final">
+      <img src="../assets/images/works/soar/MoleFinal.png" alt="maku final">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/soar/SouColor.png" alt="sou color">
+      <img src="../assets/images/works/soar/SouColor.png" alt="sou color">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/soar/MoleColor.png" alt="maku color">
+      <img src="../assets/images/works/soar/MoleColor.png" alt="maku color">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/soar/SouSketch.png" alt="sou sketch">
+      <img src="../assets/images/works/soar/SouSketch.png" alt="sou sketch">
     </div>
 
     <div class="gallery-square">
-      <img src="/assets/images/works/soar/MoleSketch.png" alt="maku sketch">
+      <img src="../assets/images/works/soar/MoleSketch.png" alt="maku sketch">
     </div>
 
   </section>
@@ -132,7 +136,7 @@
     </div>
 
     <div class="contact-logo">
-      <a href="/index.html"></a>
+      <a href="../index.html"></a>
     </div>
 
     <div class="contact-links">
@@ -145,8 +149,8 @@
   </section>
 
   <!-- JAVASCRIPT ---------------------------------------------------------------->
-  <script type="text/javascript" src="/js/workdetails_script.js"></script>
-  <script type="text/javascript" src="/js/navbar_name.js"></script>
+  <script type="text/javascript" src="../js/workdetails_script.js"></script>
+  <script type="text/javascript" src="../js/navbar_name.js"></script>
 </body>
 
 </html>
