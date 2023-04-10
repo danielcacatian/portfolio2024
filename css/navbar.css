@@ -71,3 +71,66 @@ a.active {
   margin-left: 25px;
   display: none;
 }
+
+/* MEDIA QUERIES -------------------- */
+/* (Phones) --------- */
+@media only screen and (orientation: portrait) {
+  nav.navbar {
+    overflow: visible;
+    backdrop-filter: blur(5px);
+  }
+
+  nav:hover {
+    background-color: transparent;
+  }
+
+  .logo {
+    position: relative;
+    left: -12.5%;
+    width: 150px;
+    height: 100%;
+  }
+
+  .logo .easter-egg {
+    display: none;
+  }
+
+  #menu-icon{
+    display: block;
+  }
+
+  .navlist {
+    height: 100vh;
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: #101820f7;
+    text-align: center;
+    z-index: -1;
+    padding: 0 0;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: all .25s ease;
+  }
+
+  .navlist a {
+    display: block;
+    margin: 17px;
+    transition: all .45s ease;
+    font-weight: 900 !important;
+    font-size: 30pt;
+  }
+
+  a.active {
+    border-bottom: none !important;
+  }
+
+  .navlist.open{
+    top: 0;
+    padding: 50% 0;
+    opacity: 1;
+  }
+
+}

@@ -153,6 +153,13 @@ body {
     z-index: 1;
   }
 
+  .filterlist {
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .work-gallery {
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
