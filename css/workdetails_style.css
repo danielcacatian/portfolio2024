@@ -125,6 +125,12 @@ body {
   object-fit: cover;
 }
 
+.gallery-vertical2 img {
+  width: 561px;
+  max-height: 100% !important;
+  object-fit: cover;
+}
+
 .gallery img {
   max-width: 100%;
   min-height: 561px;
@@ -138,6 +144,17 @@ body {
   .gallery-horizontal img {
     width: 1227px;
   }
+
+  .gallery-vertical img {
+    width: 1227px;
+  }
+
+  .gallery-vertical2 img {
+    width: 599px;
+    max-height: 100% !important;
+    object-fit: cover;
+  }
+
 
   .gallery img {
     min-height: 599px;
