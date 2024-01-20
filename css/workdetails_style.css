@@ -119,6 +119,12 @@ body {
   object-fit: cover;
 }
 
+.gallery-vertical img {
+  width: 1151px;
+  max-height: 100% !important;
+  object-fit: cover;
+}
+
 .gallery img {
   max-width: 100%;
   min-height: 561px;
